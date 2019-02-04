@@ -1,0 +1,40 @@
+<div class="col-md-12 calculator">
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th colspan="4" class='input-text'><div >{{input}}</div></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><div class='input-btn' (click)='clear()'>C</div></td>
+            <td><div class='input-btn' (click)='sign()'>+/-</div></td>
+            <td><div class='input-btn' (click)='percent()'>%</div></td>
+            <td class='operator'><div class='input-btn' (click)='calculate($event)'>/</div></td>
+          </tr>
+          <tr>
+            <td><div class='input-btn' (click)='append($event)'>7</div></td>
+            <td><div class='input-btn' (click)='append($event)'>8</div></td>
+            <td><div class='input-btn'(click)='append($event)'>9</div></td>
+            <td class='operator'><div class='input-btn' (click)='calculate($event)'>*</div></td>
+          </tr>
+          <tr>
+            <td><div class='input-btn' (click)='append($event)'>4</div></td>
+            <td><div class='input-btn' (click)='append($event)'>5</div></td>
+            <td><div class='input-btn' (click)='append($event)'>6</div></td>
+            <td class='operator'><div class='input-btn' (click)='calculate($event)'>-</div></td>
+          </tr>
+          <tr>
+            <td><div class='input-btn' (click)='append($event)'>1</div></td>
+            <td><div class='input-btn' (click)='append($event)'>2</div></td>
+            <td><div class='input-btn' (click)='append($event)'>3</div></td>
+            <td class='operator'><div class='input-btn' (click)='calculate($event)'>+</div></td>
+          </tr>
+          <tr>
+            <td colspan="2"><div class='input-btn' (click)='append($event)'>0</div></td>
+            <td ><div class='input-btn' (click)='append($event)'>.</div></td>
+            <td class='operator'><div class='input-btn' (click)='equals()'>=</div></td>
+          </tr>
+        </tbody>
+      </table>
+</div>

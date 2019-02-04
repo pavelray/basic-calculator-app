@@ -1,0 +1,26 @@
+.calculator{
+min-width: 400px;
+font-weight: bold;
+font-size: 20px;
+}
+
+.input-text{
+  text-align: right;
+  background-color: black;
+  color: white;
+}
+
+.input-btn:hover
+{
+  color: blue !important;
+}
+
+.input-btn{
+  text-align: center;
+  cursor: pointer;
+}
+
+.operator{
+  background-color: orange;
+  color: white;
+}
